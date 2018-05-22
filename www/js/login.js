@@ -1,3 +1,13 @@
+
+function init() {
+	document.addEventListener("deviceready",onDeviceReady, false);
+}	
+
+function onDeviceReady() {
+	loginFirebase();
+	loginFirebaseStatus();
+}
+
 function login(){
 		var userEmail = document.getElementById("email_field").value;
 		var userPass = document.getElementById("password_field").value;
@@ -318,8 +328,4 @@ function isUserEqual(googleUser, firebaseUser) {
 }
 
 
-
-function init() {
-	loginFirebase();
-	loginFirebaseStatus();
-}			
+		
